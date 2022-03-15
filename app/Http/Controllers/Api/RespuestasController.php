@@ -19,7 +19,7 @@ class RespuestasController extends Controller
         if ($request->input('id_tipo_usuario')) {
             $respuestaEncuesta->id_tipo_usuario = $request->input('id_tipo_usuario');
         }
-        //si no hay ps no
+        //si no hay, regresa un 400
         else {
             $respuesta['mensaje'] = "El valor id_tipo_usuario es obligatorio";
             return response()->json($respuesta, 400);

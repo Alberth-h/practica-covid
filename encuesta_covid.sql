@@ -86,7 +86,7 @@ CREATE TABLE `sintomas_respuesta` (
 
 CREATE TABLE `tipos_usuario` (
   `id` int(11) NOT NULL,
-  `descripción` varchar(128) NOT NULL,
+  `descripcion` varchar(128) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -95,7 +95,7 @@ CREATE TABLE `tipos_usuario` (
 -- Dumping data for table `tipos_usuario`
 --
 
-INSERT INTO `tipos_usuario` (`id`, `descripción`, `created_at`, `updated_at`) VALUES
+INSERT INTO `tipos_usuario` (`id`, `descripcion`, `created_at`, `updated_at`) VALUES
 (1, 'Alumno', '2022-02-28 22:52:45', NULL),
 (2, 'Profesor', '2022-02-28 22:52:45', NULL),
 (3, 'Empleado', '2022-02-28 22:52:45', NULL);
